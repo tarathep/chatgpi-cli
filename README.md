@@ -9,7 +9,7 @@ Download Binary file to execute (depend on OS)
 execute with command.
 
 ```sh
-chatgpt {your message}
+chatgpt
 ```
 
 or you can set path for easy to use.

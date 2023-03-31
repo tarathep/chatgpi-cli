@@ -46,7 +46,6 @@ type Usage struct {
 	TotalTokens      int `json:"total_tokens"`
 }
 
-// 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
 func main() {
 	APIKEY := os.Getenv("GPT_CLI_APIKEY")
 	MODEL := os.Getenv("GPT_CLI_MODEL")
@@ -58,7 +57,6 @@ func main() {
 		fmt.Println("Please set environment variable named GPT_CLI_APIKEY")
 		return
 	}
-
 	reader := bufio.NewReader(os.Stdin)
 
 	for {
