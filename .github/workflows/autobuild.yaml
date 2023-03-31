@@ -8,6 +8,10 @@ on:
 jobs:
   win-amd64:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+      security-events: write
 
     steps:
     - uses: actions/checkout@v2
@@ -34,6 +38,10 @@ jobs:
 
   linux-amd64:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+      security-events: write
 
     steps:
     - uses: actions/checkout@v2
@@ -60,6 +68,10 @@ jobs:
 
   macOS-amd64:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: write
+      security-events: write
 
     steps:
     - uses: actions/checkout@v2
@@ -86,7 +98,11 @@ jobs:
 
   macOS-arm64:
     runs-on: ubuntu-latest
-
+    permissions:
+      actions: write
+      contents: write
+      security-events: write
+      
     steps:
     - uses: actions/checkout@v2
 
